@@ -1,3 +1,82 @@
-h1 {
-  background-color: red;
+// CSS reset
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+// Global styles
+@import "./style-guide-variables.scss";
+
+body {
+  background-color: $color-background-paper;
+  font-family: $font-stack;
+}
+
+h1 {
+  @include text-style-h1;
+}
+
+h2 {
+  @include text-style-h2;
+}
+
+h3 {
+  @include text-style-h3;
+}
+
+h4 {
+  @include text-style-h4;
+}
+
+h5 {
+  @include text-style-h5;
+}
+
+h6 {
+  @include text-style-h6;
+}
+
+// Shared component styles
+
+// Partial styles

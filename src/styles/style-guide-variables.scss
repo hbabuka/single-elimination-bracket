@@ -1,0 +1,130 @@
+// Palette
+
+// Text colors
+$color-text-primary: rgba(239, 246, 249, 1);
+$color-text-secondary: rgba(170, 189, 198, 1);
+$color-text-tertiary: rgba(93, 118, 132, 1);
+
+// Background colors
+$color-background-paper: rgba(16, 25, 32, 1);
+$color-background-elevation: rgba(36, 48, 63, 1);
+$color-background-elevation-2: rgba(26, 35, 46, 1);
+
+// Accent colors
+$color-accent-background: rgba(255, 224, 0, 0.08);
+$color-accent-foreground: rgba(255, 224, 0, 1);
+
+// Utility colors
+$color-divider: rgba(67, 80, 90, 1);
+
+// Typography
+
+$font-stack: 'Work Sans', Arial, sans-serif;
+
+$font-size-title: 2rem;
+$font-size-subtitle: 1.25rem;
+$font-size-main: 1rem;
+$font-size-caption: 0.875rem;
+
+$font-weight-default: 400;
+$font-weight-title: 500;
+$font-weight-strong: 600;
+
+$letter-spacing-default: 0em;
+$letter-spacing-title: 0.01em;
+$letter-spacing-strong: 0.015em;
+
+// Heading 1
+@mixin text-style-h1 {
+  font-size: $font-size-title;
+  font-weight: $font-weight-title;
+  letter-spacing: $letter-spacing-title;
+}
+
+// Heading 2
+@mixin text-style-h2 {
+  font-size: $font-size-subtitle;
+  font-weight: $font-weight-default;
+  letter-spacing: $letter-spacing-default;
+}
+
+// Heading 3
+@mixin text-style-h3 {
+  font-size: $font-size-main;
+  font-weight: $font-weight-strong;
+  letter-spacing: $letter-spacing-strong;
+}
+
+// Heading 4
+@mixin text-style-h4 {
+  font-size: $font-size-main;
+  font-weight: $font-weight-default;
+  letter-spacing: $letter-spacing-default;
+}
+
+// Heading 5
+@mixin text-style-h5 {
+  font-size: $font-size-caption;
+  font-weight: $font-weight-strong;
+  letter-spacing: $letter-spacing-strong;
+}
+
+// Heading 6
+@mixin text-style-h6 {
+  font-size: $font-size-caption;
+  font-weight: $font-weight-default;
+  letter-spacing: $letter-spacing-default;
+}
+
+// Spacing
+
+$scaling-factor: 8px;
+
+$spacing-0-5: calc($scaling-factor * 0.5); // 4px
+$spacing-1: calc($scaling-factor * 1); // 8px
+$spacing-1-5: calc($scaling-factor * 1.5); // 12px
+$spacing-2: calc($scaling-factor * 2); // 16px
+$spacing-4: calc($scaling-factor * 4); // 32px
+$spacing-5: calc($scaling-factor * 5); // 40px
+$spacing-8: calc($scaling-factor * 8); // 64px
+$spacing-12: calc($scaling-factor * 12); // 96px
+$spacing-24: calc($scaling-factor * 24); // 192px
+
+// Media quereies mixin
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin media-query-for($size) {
+  @if $size == mobile {
+    @media screen and (max-width: map.get($breakpoints, sm)) {
+      @content;
+    }
+  } @else if $size == tablet-portrait {
+    @media screen and (min-width: map.get($breakpoints, md)) {
+      @content;
+    }
+  } @else if $size == tablet-landscape {
+    @media screen and (min-width: map.get($breakpoints, lg)) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media screen and (min-width: map.get($breakpoints, xl)) {
+      @content;
+    }
+  } @else if $size == desktop-large {
+    @media screen and (min-width: map.get($breakpoints, xxl)) {
+      @content;
+    }
+  }
+}
+
+// Styling constants
+
+// Component mixins
