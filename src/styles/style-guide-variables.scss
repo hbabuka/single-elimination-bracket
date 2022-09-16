@@ -90,6 +90,11 @@ $spacing-8: calc($scaling-factor * 8); // 64px
 $spacing-12: calc($scaling-factor * 12); // 96px
 $spacing-24: calc($scaling-factor * 24); // 192px
 
+// Utility styles
+
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+
 // Media quereies mixin
 
 $breakpoints: (

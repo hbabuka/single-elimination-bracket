@@ -77,6 +77,5 @@ h6 {
   @include text-style-h6;
 }
 
-// Shared component styles
-
-// Partial styles
+// Components styles - Sass Partials
+@import "../components/team/team";

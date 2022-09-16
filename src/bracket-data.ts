@@ -1,23 +1,23 @@
 // ========== Interfaces ==========
 
-export interface Team {
+export interface TeamModel {
     id: number;
     name: string;
     imgUrl: string;
 }
 
-export interface Match {
+export interface MatchModel {
     teams: { id: number; score: number }[];
 }
 
-export interface Round {
+export interface RoundModel {
     title: string;
-    matches: Match[];
+    matches: MatchModel[];
 }
 
 // ========== Data ==========
 
-export const teams: Team[] = [
+export const teams: TeamModel[] = [
     {
         id: 1,
         name: "The Cat",
@@ -60,7 +60,7 @@ export const teams: Team[] = [
     },
 ];
 
-export const bracket: Round[] = [
+export const bracket: RoundModel[] = [
     {
         title: "Quarter Finals",
         matches: [

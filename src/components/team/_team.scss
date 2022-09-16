@@ -1,0 +1,44 @@
+@import "../../styles/style-guide-variables.scss";
+
+.team-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-text-secondary;
+  padding: $spacing-1 $spacing-2 $spacing-1 $spacing-1;
+
+  .team-info {
+    display: flex;
+    align-items: center;
+    gap: $spacing-1-5;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: $border-radius-small;
+    }
+  }
+
+  .team-name-wrapper {
+    display: flex;
+    gap: $spacing-0-5;
+  }
+
+  .team-id {
+    color: $color-text-tertiary;
+    width: $spacing-1-5;
+    text-align: center;
+  }
+}
+
+.winner {
+  color: $color-text-primary;
+
+  h4 {
+    @include text-style-h3;
+  }
+}
+
+.champion {
+  background-color: $color-accent-background;
+}
