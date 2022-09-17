@@ -78,4 +78,5 @@ h6 {
 }
 
 // Components styles - Sass Partials
-@import "../components/team/team";
+@import "../components/round/round-segment/match/team/team";
+@import "../components/round/round-segment/match/match";

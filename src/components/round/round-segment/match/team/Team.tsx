@@ -1,10 +1,10 @@
 import { ReactElement } from "react"
-import { TeamModel } from "../../bracket-data"
+import { TeamModel } from "../../../../../bracket-data"
 
 interface Props {
   data: TeamModel
   type: 'LOSER' | 'WINNER'
-  isChampion: boolean
+  isChampion?: boolean
   score: number
 }
 
