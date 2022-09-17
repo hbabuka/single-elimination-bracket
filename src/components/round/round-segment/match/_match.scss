@@ -1,11 +1,11 @@
 @import "../../../../styles/style-guide-variables.scss";
 
 .match-wrapper {
-  border: 1px solid $color-divider;
+  box-shadow: inset 0 0 0 1px $color-divider;
   border-radius: $border-radius-medium;
   overflow: hidden;
 
   .team-wrapper:first-child {
-    border-bottom: 1px dashed $color-divider;
+    border-bottom: $line-style-dashed;
   }
 }

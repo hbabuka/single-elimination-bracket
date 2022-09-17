@@ -1,0 +1,11 @@
+@import "../../styles/style-guide-variables.scss";
+
+.round-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-3;
+
+  .round-title {
+    color: $color-text-tertiary;
+  }
+}

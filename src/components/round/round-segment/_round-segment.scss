@@ -1,0 +1,11 @@
+@import "../../../styles/style-guide-variables.scss";
+
+.round-segment-wrapper {
+  display: flex;
+
+  .matches-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-3;
+  }
+}

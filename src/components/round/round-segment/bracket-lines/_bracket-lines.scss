@@ -1,0 +1,21 @@
+@import "../../../../styles/style-guide-variables.scss";
+
+.bracket-lines-wrapper {
+  width: calc($base-component-dimension-unit * 2);
+  display: flex;
+  align-items: center;
+  padding-block: $base-component-dimension-unit;
+
+  .bracket {
+    height: 100%;
+    border: $line-style-solid;
+    border-left: none;
+    border-radius: 0 $border-radius-medium $border-radius-medium 0;
+    flex-grow: 1;
+  }
+
+  .horizontal-line {
+    flex-grow: 1;
+    border-top: $line-style-solid;
+  }
+}
