@@ -5,31 +5,32 @@ import { teams as serverData } from "../../../../bracket-data"
 interface Props {
   teamData: TeamsModel
   type: 'LOSER' | 'WINNER'
-  isChampion?: boolean
+  championId?: number
 }
 
-export const Team = ({ teamData, type, isChampion }: Props): ReactElement => {
+export const Team = ({ teamData, type, championId }: Props): ReactElement => {
   const [teams, setTeams] = useState<TeamModel[]>([])
 
   useEffect(() => {
     setTeams(serverData)
-
-  }, [serverData])
+  }, [])
 
   const team = teams.find((team) => team.id === teamData.id)
 
   return (
-    <div className={`team-wrapper ${type === 'WINNER' && "winner"} ${isChampion && "champion"}`}>
-      {team &&
-        <div className="team-info">
-          <img src={team.imgUrl} alt={`${team.name} team`}/>
-          <div className="team-name-wrapper">
-            <h4 className="team-id">{team.id}</h4>
-            <h4>{team.name}</h4>
-          </div>      
-          </div>
+    <>
+      {team && 
+        <div className={`team-wrapper ${type === 'WINNER' && "winner"} ${team.id === championId && "champion"}`}>
+          <div className="team-info">
+            <img src={team.imgUrl} alt={`${team.name} team`}/>
+            <div className="team-name-wrapper">
+              <h4 className="team-id">{team.id}</h4>
+              <h4>{team.name}</h4>
+            </div>      
+            </div>    
+          <h4 className="team-score">{teamData.score}</h4>
+        </div>
       }
-      <h4 className="team-score">{teamData.score}</h4>
-    </div>
+    </>    
   )
 }
