@@ -10,7 +10,9 @@ export const Round = ({ roundData }: Props): ReactElement => {
   return (
     <div className="round-wrapper">
       <h2 className="round-title">{roundData.title}</h2>
-      {roundData.matches.map((match) => <Match matchData={match}/>)}
+      {roundData.matches.map((match, index) =>
+        <Match matchData={match} key={index} />
+      )}
     </div>
   )
 }

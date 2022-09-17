@@ -6,10 +6,9 @@ interface Props {
   teamData: TeamsModel
   type: 'LOSER' | 'WINNER'
   isChampion?: boolean
-  score: number
 }
 
-export const Team = ({ teamData, type, isChampion, score }: Props): ReactElement => {
+export const Team = ({ teamData, type, isChampion }: Props): ReactElement => {
   const [teams, setTeams] = useState<TeamModel[]>([])
 
   useEffect(() => {
@@ -18,6 +17,8 @@ export const Team = ({ teamData, type, isChampion, score }: Props): ReactElement
   }, [serverData])
 
   const team = teams.find((team) => team.id === teamData.id)
+
+  console.log("teamData", teamData)
 
   return (
     <div className={`team-wrapper ${type === 'WINNER' && "winner"} ${isChampion && "champion"}`}>
@@ -30,7 +31,7 @@ export const Team = ({ teamData, type, isChampion, score }: Props): ReactElement
           </div>      
           </div>
       }
-      <h4>{score}</h4>      
+      <h4>{teamData.score}</h4>      
     </div>
   )
 }

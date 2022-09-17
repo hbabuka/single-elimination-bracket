@@ -12,7 +12,9 @@ export const Match = ({ matchData }: Props): ReactElement => {
   console.log("matchData:", matchData)
   return (
     <div className="match-wrapper">
-      {teamsData.map((team) => <Team teamData={team} type="LOSER" score={0}/>)}
+      {teamsData.map((team, index) =>
+        <Team teamData={team} type="LOSER" key={index} />
+      )}
     </div>
   )
 }
