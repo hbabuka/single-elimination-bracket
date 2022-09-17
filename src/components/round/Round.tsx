@@ -1,12 +1,16 @@
 import { ReactElement } from "react";
-import { RoundSegment } from "./round-segment/RoundSegment";
+import { RoundModel } from "../../bracket-data";
+import { Match } from "./match/Match"
 
-export const Round = (): ReactElement => {
+interface Props {
+  roundData: RoundModel
+}
+
+export const Round = ({ roundData }: Props): ReactElement => {
   return (
     <div className="round-wrapper">
-      <h2 className="round-title">Round Title</h2>
-      <RoundSegment />
-      <RoundSegment />
+      <h2 className="round-title">{roundData.title}</h2>
+      {roundData.matches.map((match) => <Match matchData={match}/>)}
     </div>
   )
 }

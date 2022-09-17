@@ -7,8 +7,8 @@ $color-text-tertiary: rgba(93, 118, 132, 1);
 
 // Background colors
 $color-background-paper: rgba(16, 25, 32, 1);
-$color-background-elevation: rgba(36, 48, 63, 1);
-$color-background-elevation-2: rgba(26, 35, 46, 1);
+$color-background-elevation: rgba(26, 35, 46, 1);
+$color-background-elevation-2: rgba(36, 48, 63, 1);
 
 // Accent colors
 $color-accent-background: rgba(0, 194, 255, 0.08);
@@ -87,12 +87,13 @@ $spacing-2: calc($scaling-factor * 2); // 16px
 $spacing-3: calc($scaling-factor * 3); // 24px
 $spacing-4: calc($scaling-factor * 4); // 32px
 $spacing-5: calc($scaling-factor * 5); // 40px
-$spacing-8: calc($scaling-factor * 8); // 64px
+$spacing-10: calc($scaling-factor * 10); // 80px
 
 // Utility styles
 
 $border-radius-small: 4px;
 $border-radius-medium: 8px;
+$border-radius-extra-large: 40px;
 
 $line-style-solid: 1px solid $color-divider;
 $line-style-dashed: 1px dashed $color-divider;

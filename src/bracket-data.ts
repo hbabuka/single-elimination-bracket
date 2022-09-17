@@ -6,8 +6,13 @@ export interface TeamModel {
     imgUrl: string;
 }
 
+export interface TeamsModel {
+    id: number;
+    score: number;
+}
+
 export interface MatchModel {
-    teams: { id: number; score: number }[];
+    teams: TeamsModel[];
 }
 
 export interface RoundModel {

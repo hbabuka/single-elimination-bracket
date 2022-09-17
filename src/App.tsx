@@ -1,24 +1,28 @@
 import "./styles/styles.scss";
-import { TeamModel, teams } from "./bracket-data";
-import { ReactElement } from "react";
-import { Team } from "./components/round/round-segment/match/team/Team";
-import { Match } from "./components/round/round-segment/match/Match";
-import { BracketLines } from "./components/round/round-segment/bracket-lines/BracketLines";
-import { RoundSegment } from "./components/round/round-segment/RoundSegment";
+import { RoundModel, TeamModel, teams } from "./bracket-data";
+import { ReactElement, useEffect, useState } from "react";
+import { Team } from "./components/round/match/team/Team";
+import { Match } from "./components/round/match/Match";
+import { BracketLines } from "./components/round/bracket-lines/BracketLines";
 import { Round } from "./components/round/Round";
+import { bracket as serverData } from "./bracket-data";
 
 const App = (): ReactElement => {
-  
+  const [roundsData, setRoundsData] = useState<RoundModel[]>([])
+
+  useEffect(() => {
+    setRoundsData(serverData)
+    
+  }, [serverData])
+
   return (
     <div className="App">
-      <h1>Single Elimination Tournament</h1>
-      {teams.map((team) => <Team data={team} type="WINNER" isChampion score={9}></Team>)}
-
-      <Match />
-      <BracketLines />
-      <RoundSegment />
-
-      <Round />
+      <div className="main-wrapper">
+        <h1>The Knockouts</h1>
+        <div className="tournament-wrapper">
+          {roundsData.map((round, index) => <Round roundData={round} key={index} />)}
+        </div>
+      </div>
     </div>
   );
 }

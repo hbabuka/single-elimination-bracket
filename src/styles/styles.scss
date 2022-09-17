@@ -46,10 +46,11 @@ h6 {
 }
 
 // Global styles
+
 @import "./style-guide-variables.scss";
 
 body {
-  background-color: $color-background-paper;
+  background-color: $color-background-elevation;
   font-family: $font-stack;
 }
 
@@ -77,9 +78,39 @@ h6 {
   @include text-style-h6;
 }
 
+// App styles
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-5;
+    padding: $spacing-10;
+    padding-top: $spacing-5;
+    background-color: $color-background-paper;
+    border: $line-style-solid;
+    border-radius: $border-radius-extra-large;
+    
+    h1 {
+      color: $color-text-primary;
+      text-align: center;
+    }
+  
+    .tournament-wrapper {
+      display: flex;
+    }  
+  }
+}
+
+
 // Components styles - Sass Partials
-@import "../components/round/round-segment/match/team/team";
-@import "../components/round/round-segment/match/match";
-@import "../components/round/round-segment/bracket-lines/bracket-lines";
-@import "../components/round/round-segment/round-segment";
+
+@import "../components/round/match/team/team";
+@import "../components/round/match/match";
+@import "../components/round/bracket-lines/bracket-lines";
 @import "../components/round/round";
