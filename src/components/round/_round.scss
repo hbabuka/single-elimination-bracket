@@ -3,9 +3,40 @@
 .round-wrapper {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
   gap: $spacing-3;
 
   .round-title {
     color: $color-text-tertiary;
+  }
+
+  .round-content {
+    display: flex;
+  }
+
+  .matches-wrapper,
+  .brackets-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-3;
+    justify-content: center;
+  }
+
+  .brackets-wrapper {
+    flex-grow: 1;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    padding-block: $middle-round-alignment-padding$middle-round-alignment-padding;
+
+    .round-content {
+      flex-grow: 1;
+    }
+    
+    .matches-wrapper {
+      flex-grow: 1;
+      justify-content: space-between;
+    }
   }
 }

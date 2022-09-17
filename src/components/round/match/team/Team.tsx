@@ -18,8 +18,6 @@ export const Team = ({ teamData, type, isChampion }: Props): ReactElement => {
 
   const team = teams.find((team) => team.id === teamData.id)
 
-  console.log("teamData", teamData)
-
   return (
     <div className={`team-wrapper ${type === 'WINNER' && "winner"} ${isChampion && "champion"}`}>
       {team &&
@@ -31,7 +29,7 @@ export const Team = ({ teamData, type, isChampion }: Props): ReactElement => {
           </div>      
           </div>
       }
-      <h4>{teamData.score}</h4>      
+      <h4 className="team-score">{teamData.score}</h4>
     </div>
   )
 }
