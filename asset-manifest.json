@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/single-elimination-bracket/static/css/main.276b0e89.css",
+    "main.js": "/single-elimination-bracket/static/js/main.3fffb4f6.js",
+    "static/js/787.8fe76787.chunk.js": "/single-elimination-bracket/static/js/787.8fe76787.chunk.js",
+    "index.html": "/single-elimination-bracket/index.html",
+    "main.276b0e89.css.map": "/single-elimination-bracket/static/css/main.276b0e89.css.map",
+    "main.3fffb4f6.js.map": "/single-elimination-bracket/static/js/main.3fffb4f6.js.map",
+    "787.8fe76787.chunk.js.map": "/single-elimination-bracket/static/js/787.8fe76787.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.276b0e89.css",
+    "static/js/main.3fffb4f6.js"
+  ]
+}
