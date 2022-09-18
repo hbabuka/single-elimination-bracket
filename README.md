@@ -5,9 +5,9 @@ UI Design & Development
 This is a UI design + development project, to present a [single-elimination bracket](https://en.wikipedia.org/wiki/Single-elimination_tournament) tournament from a given data set, using tools and technologies of my choice.
 
 ## Project links
-* **Code repository on Github:** https://github.com/hbabuka/single-elimination-bracket
-* **UI design and design system in Figma:** https://www.figma.com/file/mZw2lAYwjzM9ioNmQTRRQt/Single-elimination-bracket?node-id=8%3A6199
-* **Live demo deployed to GitHub Pages:** https://hbabuka.github.io/single-elimination-bracket/
+* Code [**repository**](https://github.com/hbabuka/single-elimination-bracket) on Github
+* UI design and design system in [**Figma**](https://www.figma.com/file/mZw2lAYwjzM9ioNmQTRRQt/Single-elimination-bracket?node-id=8%3A6199)
+* [**Live demo**](https://hbabuka.github.io/single-elimination-bracket/) deployed to GitHub Pages: 
 
 ## Design description
 ### UX concept
