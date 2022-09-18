@@ -1,8 +1,6 @@
 # Single-elimination bracket
 UI Design & Development
 
-## Table of contents
-
 ## Introduction
 This is a UI design + development project, to present a [single-elimination bracket](https://en.wikipedia.org/wiki/Single-elimination_tournament) tournament from a given data set, using tools and technologies of my choice.
 
@@ -12,7 +10,7 @@ This is a UI design + development project, to present a [single-elimination brac
 * **Live demo deployed to GitHub Pages:** https://hbabuka.github.io/single-elimination-bracket/
 
 ## Design description
-#### UX concept
+### UX concept
 The design decisions for this project are, of course, centered around the single-elimination bracket and the way the teams, matches and scores are presented. There was no other way than to go with simplistic approach, where I chose a horizontal bracket model for web screens and vertical model for smaller screens i.e. mobile devices. This was only logical given their proportional similarities.
 
 Even though this is a very simple task, I took the Atomic [Design approach](https://bradfrost.com/blog/post/atomic-web-design/) to create a small design system for the project. Working this way, always helps me organize my design and development environment in the best possible way, but it also opens a lot of space for the project to grow organically into a scallable project. Therefore, I started with the smallest - the atoms - represented by the team information, such as id, name, picture etc. With those I built the `Team` component as a molecule that turned out to be the base building block in my application. Combining two teams, I created the `Match` component as an organism that will finally be a part of the `Round` component. The latest serves as a template for me to build the whole user interface.
@@ -23,17 +21,17 @@ I would point out the following design decisions I made for this task:
 * I chose a simple representation of the teams and matches, where there the winner of each match is subtly highlighted. This will enhance the user experience in reading the information more easily.
 * I added a highlight for the champion of the tournament as well, where the user can immediately recognize who the overall winner is and what was his path to the throne like.
 
-#### Figma
+### Figma
 The designs are completely made using Figma. I created a mini design system with style guide and component set. You can find the following pages inside the Figma file:
-##### Style guide
+#### Style guide
 Mainly focused on typography and color palette for both dark and light theme.
 ![Style Guide bracket](https://user-images.githubusercontent.com/53868474/190924039-3c7ed5c0-5173-45d8-972b-a7d09826054a.png)
-#### Components
+### Components
 Designed the same way as they are later implemented. Aall components contain both light and dark variant, but I decided to implement the dark theme so far.
-#### Design and layout analyses
+### Design and layout analyses
 Includes an analysis of the layout and how it can be implemented, taking into consideration a model with more teams and rounds. Also, I added the initial sketches I did during the concept phase of the project.
 ![bracket sketch](https://user-images.githubusercontent.com/53868474/190924141-e6969eab-c818-4d60-8ab4-18ce0b3a5e55.jpg)
-#### Screen designs
+### Screen designs
 Contains the screen designs for both web and mobile. There are designs for dark and light theme. For the mobile designs there is also an additional consideration of how the UX can be improved by using tabs as horizontal navigation through the rounds.
 
 ## Implementation details
@@ -109,5 +107,6 @@ The app can be tested in the browser using a full window view and resizing the b
 ## App screenshots
 #### Web
 <img width="1680" alt="Screenshot 2022-09-18 at 22 28 11" src="https://user-images.githubusercontent.com/53868474/190927024-b2aeb49b-6492-47f4-aa2a-7470ce42c1f0.png">
+
 #### Mobile
 <img width="390" alt="Screenshot 2022-09-18 at 22 28 38" src="https://user-images.githubusercontent.com/53868474/190927029-b6857afd-c74d-4068-839e-032cec1398b6.png">
