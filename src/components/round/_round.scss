@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../styles/style-guide-variables.scss";
 
 .round-wrapper {
@@ -27,16 +28,40 @@
     flex-grow: 1;
   }
 
-  &:not(:first-child):not(:last-child) {
-    padding-block: $middle-round-alignment-padding$middle-round-alignment-padding;
-
-    .round-content {
-      flex-grow: 1;
-    }
-    
-    .matches-wrapper {
-      flex-grow: 1;
-      justify-content: space-between;
+  @media screen and (min-width: map.get($breakpoints, sm)) {
+    &:not(:first-child):not(:last-child) {
+      padding-block: $middle-round-alignment-padding$middle-round-alignment-padding;
+  
+      .round-content {
+        flex-grow: 1;
+      }
+      
+      .matches-wrapper {
+        flex-grow: 1;
+        justify-content: space-between;
+      }
     }
   }
+}
+
+@include media-query-for(mobile) {
+  .round-wrapper {
+    gap: $spacing-2;
+
+    .round-title {
+      @include text-style-h3;
+    }
+
+    .brackets-wrapper {
+      display: none;
+    }
+
+    .matches-wrapper {
+      flex-grow: 1;
+      gap: $spacing-2;
+    }
+
+    
+  }
+    
 }
