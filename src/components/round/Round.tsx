@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import { RoundModel } from "../../bracket-data";
+import { isLastRound } from "../../utils";
 import { BracketLines } from "./bracket-lines/BracketLines";
 import { Match } from "./match/Match"
 
@@ -21,7 +22,7 @@ export const Round = ({ roundData, championId }: Props): ReactElement => {
       <div className="round-content">
         <div className="matches-wrapper">
           {roundData.matches.map((match, index) =>
-            <Match matchData={match} key={index} championId={championId}/>
+            <Match matchData={match} key={index} championId={championId} isLastRound={isLastRound(roundData)} />
           )}
         </div>
         {bracketsArray.length > 0 &&

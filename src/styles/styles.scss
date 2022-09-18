@@ -95,6 +95,7 @@ h6 {
     background-color: $color-background-paper;
     border: $line-style-solid;
     border-radius: $border-radius-extra-large;
+    overflow: auto;
     
     h1 {
       color: $color-text-primary;

@@ -22,6 +22,18 @@
   .team-name-wrapper {
     display: flex;
     gap: $spacing-0-5;
+    align-items: center;
+
+    .trophy-icon {
+      margin-left: $spacing-1;
+      height: 1.5rem;
+      width: 1.5rem;
+
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
   }
 
   .team-id {

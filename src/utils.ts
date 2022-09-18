@@ -22,3 +22,11 @@ export const getChampion = (data: RoundModel[]) => {
 
   return finalsData?.find((team) => team.score === champion)?.id
 }
+
+// Find the finals round as a boolean
+// Pass it down to the team component and use it for styling
+export const isLastRound = (data: RoundModel): boolean => {
+  if (data.title === 'Finals') {
+    return true
+  } else return false
+}
