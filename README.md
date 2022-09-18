@@ -26,12 +26,12 @@ The designs are completely made using Figma. I created a mini design system with
 #### Style guide
 Mainly focused on typography and color palette for both dark and light theme.
 ![Style Guide bracket](https://user-images.githubusercontent.com/53868474/190924039-3c7ed5c0-5173-45d8-972b-a7d09826054a.png)
-### Components
+#### Components
 Designed the same way as they are later implemented. Aall components contain both light and dark variant, but I decided to implement the dark theme so far.
-### Design and layout analyses
+#### Design and layout analyses
 Includes an analysis of the layout and how it can be implemented, taking into consideration a model with more teams and rounds. Also, I added the initial sketches I did during the concept phase of the project.
 ![bracket sketch](https://user-images.githubusercontent.com/53868474/190924141-e6969eab-c818-4d60-8ab4-18ce0b3a5e55.jpg)
-### Screen designs
+#### Screen designs
 Contains the screen designs for both web and mobile. There are designs for dark and light theme. For the mobile designs there is also an additional consideration of how the UX can be improved by using tabs as horizontal navigation through the rounds.
 
 ## Implementation details
