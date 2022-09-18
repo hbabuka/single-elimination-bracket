@@ -37,9 +37,9 @@ Contains the screen designs for both web and mobile. There are designs for dark 
 ## Implementation details
 ### Technologies
 For the implementation of the project, I used the following technologies:
-* React 18.2.0
-* Typescript 4.8.3
-* Sass 1.54.9
+* [React 18.2.0](https://reactjs.org/)
+* [Typescript 4.8.3](https://www.typescriptlang.org/)
+* [Sass 1.54.9](https://sass-lang.com/)
 
 ### Setup
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
