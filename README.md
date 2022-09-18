@@ -6,8 +6,13 @@ This is a UI design + development project, to present a [single-elimination brac
 
 ## Project links
 * Code [**repository**](https://github.com/hbabuka/single-elimination-bracket) on Github
-* UI design and design system in [**Figma**](https://www.figma.com/file/mZw2lAYwjzM9ioNmQTRRQt/Single-elimination-bracket?node-id=8%3A6199)
-* [**Live demo**](https://hbabuka.github.io/single-elimination-bracket/) deployed to GitHub Pages: 
+* UI design and design system in [**Figma**](https://www.figma.com/file/mZw2lAYwjzM9ioNmQTRRQt/Single-elimination-bracket)
+* [**Live demo**](https://hbabuka.github.io/single-elimination-bracket/) deployed to GitHub Pages:
+
+<details>
+    <summary>*Note: if you don't have a Figma account, don't forget to use the menu in the top left corner to navigate to different pages of the file*</summary>
+<img width="222" alt="Screenshot 2022-09-18 at 22 55 14" src="https://user-images.githubusercontent.com/53868474/190927888-02597249-207f-4c90-bda4-c843f7d8ada5.png">
+</details>
 
 ## Design description
 ### UX concept
