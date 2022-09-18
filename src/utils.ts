@@ -1,7 +1,6 @@
 import { TeamsModel, RoundModel } from "./bracket-data"
   
-// Function to resolve the winner or the loser of the match
-// Also used to resolve the champion in the final round
+// Resolve the winner or the loser of the match
 // Needed primarily for different styling of the team items
 export const resolveTeamType = (data: TeamsModel[], score: number) => {
   const scoresArray = data.map((team) => team.score)
@@ -12,7 +11,7 @@ export const resolveTeamType = (data: TeamsModel[], score: number) => {
   } else return 'LOSER'
 }
 
-// Resolve tournament champion
+// Resolve tournament champion (winner of the final round)
 // Pass it down to the children components for a dynamic solution
 export const getChampion = (data: RoundModel[]) => {
   const finalRound = data[data.length - 1]
